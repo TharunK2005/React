@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>DTA Demo</title>
+</head>
+<body>
+<h>Find(), FindIndex(), Filter()</h>
+<script>
+ 
+            var a1=[20,20,10,30,50];
+            // Find -- Returns value of first occurrence of said condition/element
+            var f1 = a1.find(e=> e%20==0);     
+            console.log(f1)                     //Output -- 20
+            var array = [1,2,3,4,5,6,7,8,8,10,11,12]
+            var f2 = array.find(e=> e%2==0);    
+            console.log(f2)                     //Output -- 2
+            // FindIndex -- Returns index of first occurrence of said condition/element
+            var i2=a1.findIndex(e=> e==20); 
+            console.log(i2);                    //Output -- 0
+	    var a=[1,2,3,4,5];
+            var index=a.findIndex(e=> e==2); 
+            console.log(index);                 //Output -- 1
+	    //Filter -- Returns an array satisfying mentioned condition
+            var f = array.filter(e=>e%4==0)
+            console.log(f);                   //Output -- 4,8,12
+            var f1= array.filter(e=>e%2!=0)
+            console.log(f1);                  //Output -- 1,3,5,7,9,11
+ 
+</script>
+</body>
+</html>
